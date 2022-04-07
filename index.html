@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="top">
+        <div class="nav">
+            <h1 class="nav-title">Gaming<span>Dojo</span></h1>
+        <ul class="nav-links">
+            <li>
+                <select name="currency">
+                    <option>Euro €</option>
+                    <option>USD $</option>
+                    <option>Yen ¥</option>
+                </select>
+            <li class="cart-notification">
+                    <img src="assets/cart-light.png" alt="cart" class="icon-cart">  
+                    <span id="cart-items">2</span></li>
+            <li><img src="assets/search-light.png" alt="search" class="icon-seacrh"></li>
+        </ul>
+        </div>
+    </div>
+<!-- highglights -->
+    <div class="nav-2">
+        <div class="nav-2-title"><p>Highlights</p></div>
+    </div>
+    <div class="hero">
+        <div> <img onclick="changeBack()" src="./assets/chevron-left.png" alt="left-arrow"></div>
+        <div class="main-content">
+            <img id="main-avi" src="./assets/stonepunk.png" alt="stonepunk">
+        </div>
+        <div> <img onclick="change()" src="./assets/chevron-right.png" alt="right-arrow"></div>
+    </div>
+
+    <div class="scroll">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-2"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    </div>
+<!-- product listings -->
+    <div class="container">
+        <div class="sub-content">
+            <img class="content-avi" src="./assets/cafe-neko.png" alt="cafe-neko">
+        </div>
+        <div class="sub-content-2">
+            <img class="content-avi" src="./assets/pixel-ninjas-2.png" alt="pixel-ninjas-2">
+        </div>
+        <div class="sub-content">
+            <img class="content-avi" src="./assets/stonepunk.png" alt="stonepunk">
+        </div>
+    </div>
+    <div class="container-info">
+        <div class="sub-content-info">
+            <h2>Cafe Neko: Gold Edition</h2>
+            <img class="os-icons" src="./assets/windows.png" alt="windows-os">
+            <img class="os-icons" src="./assets/apple.png" alt="apple.os">
+            <div class="old-price"><p>€14.98</p></div>
+            <div class="add-cart">
+                <button class="sale-btn">-20%</button>
+                <div><p>€10.49</p></div>
+                <div onclick="addCart()"><button class="buy-btn">Buy</button></div>
+            </div>
+        </div>
+        <div class="sub-content-2-info">
+            <h2>Pixel Ninjas 2</h2>
+            <img class="os-icons" src="./assets/windows.png" alt="windows-os">
+            <img class="os-icons" src="./assets/apple.png" alt="apple.os">
+            <div class="old-price"><p>€8.19
+            </p></div>
+            <div class="add-cart">
+                <button class="sale-btn">-10%</button>
+                <div><p>€7.39</p></div>
+                <div onclick="addCart()"><button class="buy-btn">Buy</button></div>
+            </div>
+        </div>
+        <div class="sub-content-info">
+            <h2>Stonepunk 10,000 BCE</h2>
+            <img class="os-icons" src="./assets/windows.png" alt="windows-os">
+            <img class="os-icons" src="./assets/apple.png" alt="apple.os">
+            <img onclick="support(this)" class="os-icons" src="./assets/linux.png" alt="linux-os">
+            <div class="old-price"></div>
+            <div class="add-cart">
+                <button class="sale-btn">NEW!</button>
+                <div><p>€19.99</p></div>
+                <div onclick="addCart()"><button class="buy-btn">Buy</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
